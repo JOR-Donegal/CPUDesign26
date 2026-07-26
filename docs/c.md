@@ -3,14 +3,14 @@
 In our simple CPU models, an instruction ripples through the registers of the CPU, taking quite a few clock cycles to complete. Why not break up the activities required by an instruction into a number of steps and do each of these steps concurrently? Consider the steps an ordinary instruction might make (Fig 7). 
 
 <figure>
-<img src = "https://jor-donegal.github.io/CPUDesign26/images/table7.jpg">
+<img src = "https://jor-donegal.github.io/CPUDesign26/images/table2.jpg">
 <figcaption>Table 7. Flow of a single instruction .</figcaption>
 </figure>
 
 Now suppose we run one instruction after another through the stages. As one as an instruction had finished a stage, the next instruction can use the subsystems required by that stage!
 
 <figure>
-<img src = "https://jor-donegal.github.io/CPUDesign26/images/table8.jpg">
+<img src = "https://jor-donegal.github.io/CPUDesign26/images/table3.jpg">
 <figcaption>Table 8. Pipeline flow of a single instruction .</figcaption>
 </figure>
 

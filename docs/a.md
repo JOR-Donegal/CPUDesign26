@@ -16,7 +16,7 @@ If you don’t remember, do an internet search on those terms now.
 You should understand _scientific notation_, if you are rusty, revise independently. If I want to express the number one thousand in scientific notation, I can write it as 1 x 10^3^. If I want to write 1/1000 in scientific notation I can write it as 1 x 10^-3^. Before we go on, make sure you remember all this! If you don’t remember, do an internet search on those terms now. The principle of scientific notation is that we split a number into a _fraction_ and an _exponent_.
 
 <figure>
-<img src = "https://jor-donegal.github.io/CPUDesign26/images/table6.jpg">
+<img src = "https://jor-donegal.github.io/CPUDesign26/images/table1.jpg">
 <figcaption>Table 6. Floating point examples .</figcaption>
 </figure>
 
