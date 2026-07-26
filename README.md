@@ -1,5 +1,2 @@
-# MKTemplate
-Template for new teaching notes
-
-1. Edit mkdocs to name the project and add a URL
-2. 
+# CPU design for L9
+Compiled from undergrad notes from 2017
