@@ -1,12 +1,11 @@
-# Graphics Processor Units (GPU)
+# Micro-architecture
 
-Original video cards began as devices without onboard calculation capability, beyond simple memory operations. 
-The arcade game industry pushed the limit of these techniques. The first dedicated display processors began to emerge in the 1980s. 
-From the 1990s, cards were developed to take load off the CPU and perform graphics operations independently.
-_Graphics Processor Units_ were developed as video cards for complex rendering, typically for game technology. 
+By now, you should have an appreciation of the complexity of a modern processor. You are probably wondering how you could get this much functionality out of gates and flip flops. This is all so complex, you would imagine the need for a little computer inside the CPU to run the CPU? Believe it or not, this is (sort of!) the case.
 
-I'm not going to dig in to them further here, _High Performance Computing (HPC)_ is not a component of this module.
+The instruction decoder and control unit of complex microprocessors have programme code stored in it to tell it how to use its logic to run the CPU. This is called _microcode_. As programmers, we do not generally get access to this level and we certainly don’t get to change the code. In fact the code is stored in Read Only Memory or ROM, which cannot be written to.
 
-If you are interested in AI/ML then do some independent reading now. 
+Mostly!
 
-In particular, read about nVIDIA GPU technology and CUDA.
+Modern processors have utilities that allow the microcode to be rewritten. Beware, here be dragons!!
+
+Problems with some versions of processor from 2022 onwards have resulted in Intel publishing utilities to specifically update the microcode in the processor.
