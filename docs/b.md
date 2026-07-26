@@ -12,12 +12,15 @@ When we look for an instruction in cache and it is there, great! We call that a 
 Any type of memory has characteristics that we might balance, such that we have the right balance of technology. Typical characteristics are:
 
 - Speed
+
 In previous notes I looked at registers, pure electronic gates as memory. Cache memory often uses Static RAM (SRAM) which is implemented using transistors.
 
 - Size, Cost, Power
+
 The more electronics something uses to implement, the more expensive, the more power used, and the bigger the footprint on the Silicon die. DRAM uses a tiny capacitor to store each bit, simple and inexpensive and small per unit memory. SRAM uses several transistors, expensive in size, cost and power.
 
 - Persistence
+
 When we turn off the power, we lose the contents of memory, SRAM or DRAM. With a have drive, we do not. The hard drive is said to be persistent. In some technology we wil see, we can have battery backed up DRAM which is persistent.
 
 Mass storage (hard drives) can also be used as memory.
