@@ -1,6 +1,6 @@
 # Logical Processors
 
-Taking this idea a little further, we can get a CPU to act like it is two logical CPUs. Two separate _threads of execution_ can be multiplexed into the same CPU. Intel calls this technology _hyperthreading_. If you look at task manager on your laptop and check the performance tab, you'll see sockets, cores and logical processors.
+Taking this idea a little further, we can get a CPU to act like it is two logical CPUs. Two separate _threads of execution_ can be multiplexed into the same CPU. Intel calls this technology _hyperthreading_. If you look at task manager on your laptop and check the performance tab, you'll see _sockets_, _cores_ and _logical processors_.
 
 - Socket: the physical silicon on the motherboard, a single chip on most laptops, multiple on servers.
 - Core: inside that single chip, we can have multiple CPUs or _cores_ which can share resources on the chip, like cache memory.

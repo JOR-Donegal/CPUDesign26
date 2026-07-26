@@ -1,4 +1,4 @@
-# Enhancing the CPU
+# Number crunching
 
 Even after 50 years, the principle of operation for an Intel or AMD CPU should be recognizable from the simple descriptions in these notes up to now. To finish this technology introduction, I want to talk about some of the enhancements that have been used to speed up and generally improve the performance of processors.
 
