@@ -17,7 +17,7 @@ You should understand _scientific notation_, if you are rusty, revise independen
 
 <figure>
 <img src = "https://jor-donegal.github.io/CPUDesign26/images/table1.jpg">
-<figcaption>Table 6. Floating point examples .</figcaption>
+<figcaption>Table 1. Floating point examples .</figcaption>
 </figure>
 
 We can describe very big and very small numbers in the computer in exactly the same way. Imagine we have a 32 bit register to describe numbers; we call this _single precision floating point_. We could store the fraction part of the number in the first 24 bits and the exponent in the last 8. The exponent must be signed so only 7 digits could be used to represent numbers and our exponent could range from -127 to +128 (why?). _Double precision floating point_ uses 64 bits where 53 digits are used for the fraction and 11 bits are used for the exponent. Giving one bit for the sign, that gives us an exponent range of -1022 to + 1023. We can now describe very large and very small numbers.
