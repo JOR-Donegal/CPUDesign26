@@ -1,11 +1,28 @@
-# Cache
+# Memory Hierarchy
 
 Once microprocessor clock speeds went faster than 16Mhz (around 1990!) we ran into a performance mismatch; CPUs became faster than main memory. The architecture of main memory is called _Dynamic Random Access Memory_ or DRAM and it has the characteristics of being cheap with a low component count per bit. Each bit is stored as charge on a capacitor, with as little as two transistors controlling the charge. The downside is that DRAM is relatively slow. We could use _Static RAM_ or SRAM, This looks like the memory we built with D Flip Flops, but it has a very high component count per bit and is thus very expensive, takes a great deal of space on the silicon, uses a lot of power, etc.
-There was no easy fix for this, there is still no good solution today. 
+There was no easy fix for this, there is still no good solution today.
 
 The way we get around the problem is to have a very large, slow, cheap main memory using DRAM. We then have a much smaller fast expensive _cache memory_ using SRAM. Most programmes run sequentially, one instruction following the other. When we have to read an instruction from memory, we could just as easily read a full kilobyte of instructions from main memory to cache. When we need the next instruction from memory, instead of making a slow call to main memory, we can make a call to the much faster cache memory. This is an _instruction cache_.
+
 Similarly, if we are going to operate on a piece of data, there is a really good chance that the next piece of data we are going to need is right beside the one we just used. We call this _spatial locality_. If we have previously used a piece of data, there is a high chance we will use it again. This is called _temporal locality_. The fact that we can prove both of these things to be statistically predictable gives us the ability to size and design our cache and the algorithms to decide how to operate it. This is a _data cache_. 
 
 When we look for an instruction in cache and it is there, great! We call that a _cache hit_ and it means that we are operating at maximum efficiency. If not, we have a big delay seeking the data from main memory. This process might be 1,000 times slower than getting the information from the cache. We call this a _cache miss_.
 
-We will look at cache memory, DRAM and SRAM in more detail later in the course.
+Any type of memory has characteristics that we might balance, such that we have the right balance of technology. Typical characteristics are:
+
+- Speed
+In previous notes I looked at registers, pure electronic gates as memory. Cache memory often uses Static RAM (SRAM) which is implemented using transistors.
+
+- Size, Cost, Power
+The more electronics something uses to implement, the more expensive, the more power used, and the bigger the footprint on the Silicon die. DRAM uses a tiny capacitor to store each bit, simple and inexpensive and small per unit memory. SRAM uses several transistors, expensive in size, cost and power.
+
+- Persistence
+When we turn off the power, we lose the contents of memory, SRAM or DRAM. With a have drive, we do not. The hard drive is said to be persistent. In some technology we wil see, we can have battery backed up DRAM which is persistent.
+
+Mass storage (hard drives) can also be used as memory.
+
+<figure>
+<img src = "https://jor-donegal.github.io/CPUDesign26/images/fig1.jpg">
+<figcaption>fig 1. The memory Hierarchy .</figcaption>
+</figure>
